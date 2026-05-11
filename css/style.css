@@ -43,7 +43,9 @@ h1 {
   text-align: center; 
 }
 
-/* Lecteur Vidéo (Modale) */
+/* --- Dans css/style.css --- */
+
+/* Lecteur Vidéo (Modale) - Légèrement plus sombre pour immersion */
 #player-container { 
   display: none; 
   position: fixed; 
@@ -51,27 +53,54 @@ h1 {
   left: 0; 
   width: 100%; 
   height: 100%; 
-  background: rgba(0,0,0,0.9); 
+  background: rgba(0,0,0,0.95); 
   justify-content: center; 
   align-items: center; 
   flex-direction: column; 
   z-index: 10; 
+  padding: 20px; /* Ajout d'air autour pour mobile */
+  box-sizing: border-box;
 }
 
+/* Vidéo : BEAUCOUP PLUS GRANDE */
 video { 
-  max-width: 90%; 
+  /* La vidéo essaie de prendre 90% de la largeur dispo */
+  width: 90%; 
+  /* Mais on limite sur desktop pour que ce ne soit pas ridicule (ex: écran 4K) */
+  max-width: 1200px; 
+  
+  /* La hauteur s'adapte, mais est bridée à 80% de l'écran max 
+     pour laisser de la place au bouton dessous */
   max-height: 80vh; 
+  height: auto; 
+
+  object-fit: contain; /* Conserve le ratio d'image */
   border-radius: 8px; 
   outline: none; 
+  background: #000; /* Fond noir si le ratio ne correspond pas */
+
+  /* Ombre portée pour l'effet premium */
+  box-shadow: 0 10px 50px rgba(0,0,0,0.8); 
 }
 
+/* Bouton de fermeture : Légèrement plus grand et stylisé */
 .close-btn { 
-  margin-top: 1rem; 
-  padding: 0.5rem 1.5rem; 
+  margin-top: 1.5rem; 
+  padding: 0.7rem 2rem; 
   background: #ff4757; 
   color: white; 
   border: none; 
   border-radius: 4px; 
   cursor: pointer; 
   font-weight: bold; 
+  font-size: 1.1rem;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.close-btn:hover { 
+  background: #ff6b81; 
+}
+
+.close-btn:active {
+  transform: scale(0.95); /* Petit effet de clic */
 }
