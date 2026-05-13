@@ -1,4 +1,4 @@
-// Ciblage des éléments du DOM
+
 const grid = document.getElementById('grid');
 const playerContainer = document.getElementById('player-container');
 const videoPlayer = document.getElementById('video-player');
@@ -15,9 +15,9 @@ videoData.forEach(data => {
   
   // 2. Action au clic sur une carte
   card.addEventListener('click', () => {
-    videoPlayer.src = data.url_video;       // Charge la bonne vidéo
+    univPlayer.src = data.url_video;       // Charge la bonne vidéo
     playerContainer.style.display = 'flex'; // Affiche la modale
-    videoPlayer.play();                     // Lance la lecture
+    univPlayer.play();                     // Lance la lecture
   });
 
   // Ajout de la carte dans la grille HTML
@@ -28,7 +28,7 @@ videoData.forEach(data => {
 function closePlayer() {
   playerContainer.style.display = 'none'; // Masque la modale
   univPlayer.pause();                    // Coupe le son/l'image
-  videoPlayer.currentTime = 0;            // Remet la vidéo au début
+  univPlayer.currentTime = 0;            // Remet la vidéo au début
 }
 
 // 4. Écouteurs d'événements pour la fermeture
