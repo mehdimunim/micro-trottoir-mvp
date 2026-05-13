@@ -27,7 +27,7 @@ videoData.forEach(data => {
 // 3. Gestion de la fermeture du lecteur
 function closePlayer() {
   playerContainer.style.display = 'none'; // Masque la modale
-  videoPlayer.pause();                    // Coupe le son/l'image
+  univPlayer.pause();                    // Coupe le son/l'image
   videoPlayer.currentTime = 0;            // Remet la vidéo au début
 }
 
