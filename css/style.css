@@ -62,8 +62,7 @@ h1 {
   box-sizing: border-box;
 }
 
-/* Vidéo : BEAUCOUP PLUS GRANDE */
-video { 
+#univ-player { 
   /* La vidéo essaie de prendre 90% de la largeur dispo */
   width: 90%; 
   /* Mais on limite sur desktop pour que ce ne soit pas ridicule (ex: écran 4K) */
@@ -81,6 +80,7 @@ video {
 
   /* Ombre portée pour l'effet premium */
   box-shadow: 0 10px 50px rgba(0,0,0,0.8); 
+  aspect-ratio: 16/9;
 }
 
 /* Bouton de fermeture : Légèrement plus grand et stylisé */

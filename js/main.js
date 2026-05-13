@@ -1,7 +1,7 @@
 
 const grid = document.getElementById('grid');
 const playerContainer = document.getElementById('player-container');
-const videoPlayer = document.getElementById('video-player');
+const univPlayer = document.getElementById('univ-player');
 const closeBtn = document.getElementById('close-btn');
 
 // 1. Génération de l'interface (videoData vient de data/videos.js)
@@ -33,4 +33,4 @@ function closePlayer() {
 
 // 4. Écouteurs d'événements pour la fermeture
 closeBtn.addEventListener('click', closePlayer);
-videoPlayer.addEventListener('ended', closePlayer); // Ferme automatiquement à la fin de la vidéo
+univPlayer.addEventListener('ended', closePlayer); // Ferme automatiquement à la fin de la vidéo
