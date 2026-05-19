@@ -13,7 +13,7 @@ const videoData = [
     titre_question: "IA et législation", 
     url_video: "https://video.univ-rennes.fr/videos/ia-et-legislation-vf/iframe/", 
     url_miniature: "assets/img/IA_et_droit.png",
-    duree_seconde: 195 
+    duree_seconde: 200 
   },
 
   { 
@@ -21,7 +21,7 @@ const videoData = [
     titre_question: "IA et enseignement", 
     url_video: "https://video.univ-rennes.fr/permalink/v126d450ab67bqt2aw1u/iframe/", 
     url_miniature: "assets/img/IA_enseignement.png",
-    duree_seconde: 180 
+    duree_seconde: 182 
   },
 
   { 
@@ -29,7 +29,7 @@ const videoData = [
     titre_question: "IA et humain", 
     url_video: "https://video.univ-rennes.fr/permalink/v126d44fc8253dl70bzg/iframe/", 
     url_miniature: "assets/img/IA.png",
-    duree_seconde:60 
+    duree_seconde:162 
   },
 
   {
@@ -37,6 +37,6 @@ const videoData = [
     titre_question: "IA et environnement",
     url_video: "https://video.univ-rennes.fr/videos/ia-environnementmusiquemp4/iframe/",
     url_miniature: "assets/img/IA_et_environnement.png",
-    duree_seconde:60
+    duree_seconde:386
   },
 ];
