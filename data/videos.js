@@ -35,7 +35,7 @@ const videoData = [
   {
     id: 5,
     titre_question: "IA et environnement",
-    url_video: "https://video.univ-rennes.fr/videos/ia-environnementvfmp4/",
+    url_video: "https://video.univ-rennes.fr/videos/ia-environnementmusiquemp4/iframe/",
     url_miniature: "assets/img/IA_et_environnement.png",
     duree_seconde:60
   },
