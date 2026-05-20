@@ -19,7 +19,7 @@ const videoData = [
   { 
     id: 3, 
     titre_question: "IA et enseignement", 
-    url_video: "https://video.univ-rennes.fr/permalink/v126d450ab67bqt2aw1u/iframe/?autoplay=1", 
+    url_video: "https://video.univ-rennes.fr/videos/ia-et-enseignement/iframe/", 
     url_miniature: "assets/img/IA_enseignement.png",
     duree_seconde: 182 
   },
