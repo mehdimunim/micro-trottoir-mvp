@@ -11,7 +11,7 @@ const videoData = [
   { 
     id: 2, 
     titre_question: "IA et législation", 
-    url_video: "https://video.univ-rennes.fr/videos/ia-et-legislation-vf/iframe/?autoplay=1", 
+    url_video: "https://video.univ-rennes.fr/videos/ia-et-legislation/iframe/?autoplay=1", 
     url_miniature: "assets/img/IA_et_droit.png",
     duree_seconde: 200 
   },
@@ -35,7 +35,7 @@ const videoData = [
   {
     id: 5,
     titre_question: "IA et environnement",
-    url_video: "https://video.univ-rennes.fr/videos/ia-environnementmusiquemp4/iframe/?autoplay=1 ",
+    url_video: "https://video.univ-rennes.fr/videos/ia-environnement/iframe/?autoplay=1",
     url_miniature: "assets/img/IA_et_environnement.png",
     duree_seconde:386
   },
